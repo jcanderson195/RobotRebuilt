@@ -24,27 +24,27 @@ namespace RobotRebuilt
 
             if (choice == 1)
             {
-                AmericanRobot Robbie = new AmericanRobot("Robbie", "Apple", 100);
+                AmericanRobot newAmerican = new AmericanRobot("Robbie", "Apple", 100);
                 Console.WriteLine("Hello I'm Robbie!. Nice to meet you!");
-                Robbie.americanGunShots();
+                newAmerican.americanGunShots();
             }
             else if (choice == 2)
             {
-                JapaneseRobot Wallie = new JapaneseRobot("Wallie", "Sony", 100);
+                JapaneseRobot newJapanese = new JapaneseRobot("Wallie", "Sony", 100);
                 Console.WriteLine("Konnichiwa! I am Wallie! Nice to meet you!");
-                Wallie.japaneseScreaming();
+                newJapanese.japaneseScreaming();
             }
             else if (choice == 3)
             {
-                AfricanRobot Dodger = new AfricanRobot("Dodger", "Samsung", 100);
+                AfricanRobot newAfrican = new AfricanRobot("Dodger", "Samsung", 100);
                 Console.WriteLine("Hey there! I am Dodger! Nice to meet you!");
-                Dodger.africanJumping();
+                newAfrican.africanJumping();
             }
             else if (choice == 4)
             {
-                RussianRobot Charlie = new RussianRobot("Charlie", "Toshiba", 100);
+                RussianRobot newRussian = new RussianRobot("Charlie", "Toshiba", 100);
                 Console.WriteLine("HEY YOU THERE! I'm Charlie! Nice to meet you!");
-                Charlie.russianWaving();
+                newRussian.russianWaving();
             }
             else if (choice == 5)
             {

@@ -11,6 +11,9 @@ namespace RobotRebuilt
         public string robotName;
         public string robotBrand;
         public int robotBatteryLevel;
+        public int batteryLevel;
+        public int decreaseBattery;
+        public int increaseBattery;
         
 
         public Robot()

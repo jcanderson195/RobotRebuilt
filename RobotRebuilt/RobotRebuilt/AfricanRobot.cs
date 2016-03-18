@@ -22,8 +22,8 @@ namespace RobotRebuilt
         public int africanJumping()
         {
             int jumpsAttempted;
-            int batteryLevel = 100;
-            int decreaseBattery = batteryLevel;
+            batteryLevel = 100;
+            decreaseBattery = batteryLevel;
 
             Console.WriteLine("Enter how many jumps I should do 0 - 10 ");
             jumpsAttempted = Convert.ToInt32(Console.ReadLine());

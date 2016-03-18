@@ -20,7 +20,7 @@ namespace RobotRebuilt
         public int russianWaving()
         {
             int wavesAttempted;
-            int batteryLevel = 100;
+            batteryLevel = 100;
             int decreaseBattery = batteryLevel;
 
             Console.WriteLine("Enter how many waves I should do 0 - 10 ");

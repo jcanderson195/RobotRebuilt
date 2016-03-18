@@ -17,6 +17,7 @@ namespace RobotRebuilt
             Console.WriteLine("2. Japanese Robot");
             Console.WriteLine("3. African Robot");
             Console.WriteLine("4. Russian Robot");
+            Console.WriteLine("5. Exit");
 
             int choice;
             choice = Convert.ToInt32(Console.ReadLine());
@@ -44,6 +45,10 @@ namespace RobotRebuilt
                 RussianRobot Charlie = new RussianRobot("Charlie", "Toshiba", 100);
                 Console.WriteLine("HEY YOU THERE! I'm Charlie! Nice to meet you!");
                 Charlie.russianWaving();
+            }
+            else if (choice == 5)
+            {
+                Console.WriteLine("Thank you for your time! Have a good day!");
             }
             else
             {

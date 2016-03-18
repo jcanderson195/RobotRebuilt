@@ -11,7 +11,7 @@ namespace RobotRebuilt
         public string robotName;
         public string robotBrand;
         public int robotBatteryLevel;
-        public int robotRechargeTime;
+        
 
         public Robot()
         {

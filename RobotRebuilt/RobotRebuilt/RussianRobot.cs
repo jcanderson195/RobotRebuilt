@@ -23,7 +23,7 @@ namespace RobotRebuilt
             int batteryLevel = 100;
             int decreaseBattery = batteryLevel;
 
-            Console.WriteLine("Enter how many waves I should do 1 - 10 ");
+            Console.WriteLine("Enter how many waves I should do 0 - 10 ");
             wavesAttempted = Convert.ToInt32(Console.ReadLine());
 
             if (wavesAttempted == 0)
@@ -33,24 +33,24 @@ namespace RobotRebuilt
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (wavesAttempted >= 1)
+            else if (wavesAttempted <= 3)
             {
-                Console.WriteLine("Hey there's some people. Hi!!!!!");
-                decreaseBattery = batteryLevel - wavesAttempted;
+                Console.WriteLine("Hey there's "+wavesAttempted+" people. Hi!!!!!");
+                decreaseBattery = batteryLevel - wavesAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (wavesAttempted >= 4)
+            else if (wavesAttempted <= 6)
             {
-                Console.WriteLine("Now we're talking! " + wavesAttempted + " jumps completed");
-                decreaseBattery = batteryLevel - wavesAttempted;
+                Console.WriteLine("Now we're talking! " + wavesAttempted + " people waved at.");
+                decreaseBattery = batteryLevel - wavesAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (wavesAttempted >= 7)
+            else if (wavesAttempted <= 9)
             {
-                Console.WriteLine("Wow thats a lot of people. ! " + wavesAttempted);
-                decreaseBattery = batteryLevel - wavesAttempted;
+                Console.WriteLine("Wow thats a lot of people. ! " + wavesAttempted+ " people waved at.");
+                decreaseBattery = batteryLevel - wavesAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }

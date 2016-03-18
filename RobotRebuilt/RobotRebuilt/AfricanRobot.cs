@@ -25,7 +25,7 @@ namespace RobotRebuilt
             int batteryLevel = 100;
             int decreaseBattery = batteryLevel;
 
-            Console.WriteLine("Enter how many jumps I should do 1 - 10 ");
+            Console.WriteLine("Enter how many jumps I should do 0 - 10 ");
             jumpsAttempted = Convert.ToInt32(Console.ReadLine());
 
             if (jumpsAttempted == 0)
@@ -35,31 +35,31 @@ namespace RobotRebuilt
                 Console.WriteLine("Battery Level: "+decreaseBattery);
                 return decreaseBattery;
             }
-            else if (jumpsAttempted >= 1)
+            else if (jumpsAttempted <= 3)
             {
-                Console.WriteLine("That's all? Fine. One jump done.");
-                decreaseBattery = batteryLevel - jumpsAttempted;
+                Console.WriteLine("That's all? Fine. " + jumpsAttempted + " jumps completed");
+                decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (jumpsAttempted >= 4)
+            else if (jumpsAttempted <= 6)
             {
                 Console.WriteLine("Now we're talking! " +jumpsAttempted+" jumps completed");
-                decreaseBattery = batteryLevel - jumpsAttempted;
+                decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (jumpsAttempted >= 7)
+            else if (jumpsAttempted <= 9)
             {
                 Console.WriteLine("Ok my legs are starting to hurt!");
-                decreaseBattery = batteryLevel - jumpsAttempted;
+                decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
             else if (jumpsAttempted == 10)
             {
                 Console.WriteLine("*Breaks legs*");
-                decreaseBattery = batteryLevel - jumpsAttempted;
+                decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }

@@ -11,10 +11,8 @@ namespace RobotRebuilt
         static void Main(string[] args)
         {
 
-            AmericanRobot Robbie = new AmericanRobot("Robbie", "Apple", 100);
-            JapaneseRobot Wallie = new JapaneseRobot("Wallie", "Sony", 100);
-            AfricanRobot Dodger = new AfricanRobot("Dodger", "Samsung", 100);
-            RussianRobot Charlie = new RussianRobot("Charlie", "Toshiba", 100);
+            Menu runMenu = new Menu();
+            runMenu.MenuRobot();
             
         }
     }

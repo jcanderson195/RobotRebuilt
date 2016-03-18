@@ -24,7 +24,7 @@ namespace RobotRebuilt
             int batteryLevel = 100;
             int decreaseBattery = batteryLevel;
 
-            Console.WriteLine("Enter a volume level 1-10: ");
+            Console.WriteLine("Enter a volume level 0-10: ");
            volume = Convert.ToInt32(Console.ReadLine());
 
             if (volume == 0)
@@ -34,31 +34,31 @@ namespace RobotRebuilt
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (volume >= 1)
+            else if (volume <= 3)
             {
                 Console.WriteLine("*whispers*Banzai");
-                decreaseBattery = batteryLevel - volume;
+                decreaseBattery = batteryLevel - volume*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (volume >= 4)
+            else if (volume <= 6)
             {
                 Console.WriteLine("*talking*Banzai");
-                decreaseBattery = batteryLevel - volume;
+                decreaseBattery = batteryLevel - volume*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
-            else if (volume >= 7)
+            else if (volume <= 9)
             {
                 Console.WriteLine("*Screams*Banzai!!!!!");
-                decreaseBattery = batteryLevel - volume;
+                decreaseBattery = batteryLevel - volume*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }
             else if (volume == 10)
             {
                 Console.WriteLine("*Breaks voice box*");
-                decreaseBattery = batteryLevel - volume;
+                decreaseBattery = batteryLevel - 100;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
                 return decreaseBattery;
             }

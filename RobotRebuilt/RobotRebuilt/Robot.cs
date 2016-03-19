@@ -14,7 +14,11 @@ namespace RobotRebuilt
         public int batteryLevel;
         public int decreaseBattery;
         public int increaseBattery;
-        
+
+        public bool repairLegs;
+        public bool repairArm;
+        public bool repairVoice;
+        public bool ammoFull;
 
         public Robot()
         {

@@ -54,6 +54,7 @@ namespace RobotRebuilt
             {
                 Console.WriteLine("Sorry I don't recognize that command");
             }
+            //Loop back to options
         }
 
     }

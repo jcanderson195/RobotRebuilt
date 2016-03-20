@@ -29,9 +29,12 @@ namespace RobotRebuilt
                 Console.WriteLine("I'm all out of bullets and battery");
                 Console.WriteLine("My battery level is " +batteryLevel);
                 Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
-                int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("---------------------");
                 Console.WriteLine("1. Repair Fleet");
                 Console.WriteLine("2. Recharge Fleet");
+
+                    int choice; 
+                    choice = Convert.ToInt32(Console.ReadLine());
 
                 if (choice == 1)
                 {
@@ -46,6 +49,7 @@ namespace RobotRebuilt
 
                 }
 
+
                 return batteryLevel;
             }
             else if (bulletNumber < 100)
@@ -54,10 +58,11 @@ namespace RobotRebuilt
                 Console.WriteLine("BANG! BANG! BANG!");
                 Console.WriteLine("My battery level is " + batteryLevel);
                  Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
-                int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("---------------------");
                 Console.WriteLine("1. Repair Fleet");
                 Console.WriteLine("2. Recharge Fleet");
 
+                int choice = Convert.ToInt32(Console.ReadLine());
                     if (choice == 1)
                 {
                     RobotRepairFleet newRepairFleet = new RobotRepairFleet();

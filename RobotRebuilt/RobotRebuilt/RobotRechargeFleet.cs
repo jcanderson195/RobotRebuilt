@@ -48,7 +48,7 @@ namespace RobotRebuilt
             {
                 Console.WriteLine("Our services are not needed.");
             }
-            else if (batteryLevel <= 99)
+            else if (batteryLevel >= 41)
             {
                 Console.WriteLine("Are you sure you need a recharge?");
                 return batteryLevel;
@@ -58,6 +58,7 @@ namespace RobotRebuilt
             {
                 Console.WriteLine("Time to recharge!");
                 increaseBattery += batteryLevel;
+                Console.WriteLine("Your battery level is "+rechargedBatteryLevel);
                 return rechargedBatteryLevel;
             }
 

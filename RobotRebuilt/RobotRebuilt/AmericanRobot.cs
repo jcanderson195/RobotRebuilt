@@ -28,7 +28,24 @@ namespace RobotRebuilt
             {
                 Console.WriteLine("I'm all out of bullets and battery");
                 Console.WriteLine("My battery level is " +batteryLevel);
-                
+                Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1. Repair Fleet");
+                Console.WriteLine("2. Recharge Fleet");
+
+                if (choice == 1)
+                {
+                    RobotRepairFleet newRepairFleet = new RobotRepairFleet();
+                    newRepairFleet.repairFleetNames("Samsung", 100);
+                    newRepairFleet.AmmoReserve();
+                }
+                else if (choice == 2)
+                {
+                    RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
+                    newRechargeFleet.rechargeAbility("Samsung", 100);
+
+                }
+
                 return batteryLevel;
             }
             else if (bulletNumber < 100)
@@ -36,6 +53,24 @@ namespace RobotRebuilt
                 batteryLevel -= bulletNumber;
                 Console.WriteLine("BANG! BANG! BANG!");
                 Console.WriteLine("My battery level is " + batteryLevel);
+                 Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1. Repair Fleet");
+                Console.WriteLine("2. Recharge Fleet");
+
+                    if (choice == 1)
+                {
+                    RobotRepairFleet newRepairFleet = new RobotRepairFleet();
+                    newRepairFleet.repairFleetNames("Samsung", 100);
+                    newRepairFleet.AmmoReserve();
+                }
+                    else if (choice == 2)
+                {
+                    RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
+                    newRechargeFleet.rechargeAbility("Samsung", 100);
+                    
+                }
+               
                 return batteryLevel;
             }
             else if (bulletNumber == 100)

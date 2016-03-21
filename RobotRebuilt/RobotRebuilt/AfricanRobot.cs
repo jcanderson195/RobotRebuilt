@@ -40,6 +40,23 @@ namespace RobotRebuilt
                 Console.WriteLine("That's all? Fine. " + jumpsAttempted + " jumps completed");
                 decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
+
+                Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
+                Console.WriteLine("---------------------");
+                
+                Console.WriteLine("2. Recharge Fleet");
+
+                int choice;
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                
+                if (choice == 2)
+                {
+                    RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
+                    newRechargeFleet.rechargeAbility("Samsung", 100);
+
+                }
+
                 return decreaseBattery;
             }
             else if (jumpsAttempted <= 6)
@@ -47,6 +64,23 @@ namespace RobotRebuilt
                 Console.WriteLine("Now we're talking! " +jumpsAttempted+" jumps completed");
                 decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
+
+                Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
+                Console.WriteLine("---------------------");
+                Console.WriteLine("1. Repair Fleet");
+                Console.WriteLine("2. Recharge Fleet");
+
+                int choice;
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                
+                if (choice == 2)
+                {
+                    RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
+                    newRechargeFleet.rechargeAbility("Samsung", 100);
+
+                }
+
                 return decreaseBattery;
             }
             else if (jumpsAttempted <= 9)
@@ -54,6 +88,22 @@ namespace RobotRebuilt
                 Console.WriteLine("Ok my legs are starting to hurt!");
                 decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
+
+                Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
+                Console.WriteLine("---------------------");
+                Console.WriteLine("1. Repair Fleet");
+                Console.WriteLine("2. Recharge Fleet");
+
+                int choice;
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                if (choice == 2)
+                {
+                    RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
+                    newRechargeFleet.rechargeAbility("Samsung", 100);
+
+                }
+
                 return decreaseBattery;
             }
             else if (jumpsAttempted == 10)
@@ -61,6 +111,28 @@ namespace RobotRebuilt
                 Console.WriteLine("*Breaks legs*");
                 decreaseBattery = batteryLevel - jumpsAttempted*10;
                 Console.WriteLine("Battery Level: " + decreaseBattery);
+
+                Console.WriteLine("Do you need a repair fleet? Do you need a recharge fleet?");
+                Console.WriteLine("---------------------");
+                Console.WriteLine("1. Repair Fleet");
+                Console.WriteLine("2. Recharge Fleet");
+
+                int choice;
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                if (choice == 1)
+                {
+                    RobotRepairFleet newRepairFleet = new RobotRepairFleet();
+                    newRepairFleet.repairFleetNames("Samsung", 100);
+                    newRepairFleet.LegRepairSystem();
+                }
+                else if (choice == 2)
+                {
+                    RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
+                    newRechargeFleet.rechargeAbility("Samsung", 100);
+
+                }
+
                 return decreaseBattery;
             }
             return decreaseBattery;

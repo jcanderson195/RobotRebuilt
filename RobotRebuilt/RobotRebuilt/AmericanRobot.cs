@@ -41,11 +41,33 @@ namespace RobotRebuilt
                     RobotRepairFleet newRepairFleet = new RobotRepairFleet();
                     newRepairFleet.repairFleetNames("Samsung", 100);
                     newRepairFleet.AmmoReserve();
+
+
+                    Console.WriteLine("Would you like to shoot an enemy robot? ");
+                    Console.WriteLine("1. YES!");
+                    Console.WriteLine("--------------");
+
+                    int decision;
+                    decision = Convert.ToInt32(Console.ReadLine());
+
+                    if (decision == 1)
+                    {
+                        int WallieBatteryLevelShot;
+                        WallieBatteryLevelShot = 100 - 99;
+
+                        Console.WriteLine("Shooting Japanese Robot......");
+                        Console.WriteLine("Wallie: Aghhhhhhh....You shot me!!!!!!");
+                        Console.WriteLine("My battery level is at " + WallieBatteryLevelShot);
+                        Console.WriteLine("--------------------");
+                        Console.WriteLine("Please exit application!!!!!");
+                    }
                 }
                 else if (choice == 2)
                 {
                     RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
                     newRechargeFleet.rechargeAbility("Samsung", 100);
+
+                    Console.WriteLine("You have no ammo to shoot an enemy robot");
 
                 }
 
@@ -68,12 +90,52 @@ namespace RobotRebuilt
                     RobotRepairFleet newRepairFleet = new RobotRepairFleet();
                     newRepairFleet.repairFleetNames("Samsung", 100);
                     newRepairFleet.AmmoReserve();
+
+                    Console.WriteLine("Would you like to shoot an enemy robot? ");
+                    Console.WriteLine("1. YES!");
+                    Console.WriteLine("--------------");
+
+                    int decision;
+                    decision = Convert.ToInt32(Console.ReadLine());
+
+                    if (decision == 1)
+                    {
+                        int WallieBatteryLevelShot;
+                        WallieBatteryLevelShot = 100 - 99;
+
+                        Console.WriteLine("Shooting Japanese Robot......");
+                        Console.WriteLine("Wallie: Aghhhhhhh....You shot me!!!!!!");
+                        Console.WriteLine("My battery level is at " + WallieBatteryLevelShot);
+                        Console.WriteLine("--------------------");
+                        Console.WriteLine("Please exit application!!!!!");
+                    }
+
                 }
                     else if (choice == 2)
                 {
                     RobotRechargeFleet newRechargeFleet = new RobotRechargeFleet();
                     newRechargeFleet.rechargeAbility("Samsung", 100);
-                    
+
+
+                    Console.WriteLine("Would you like to shoot an enemy robot? ");
+                    Console.WriteLine("1. YES!");
+                    Console.WriteLine("--------------");
+
+                    int decision;
+                    decision = Convert.ToInt32(Console.ReadLine());
+
+                    if (decision == 1)
+                    {
+                        int WallieBatteryLevelShot;
+                        WallieBatteryLevelShot = 100 - 99;
+
+                        Console.WriteLine("Shooting Japanese Robot......");
+                        Console.WriteLine("Wallie: Aghhhhhhh....You shot me!!!!!!");
+                        Console.WriteLine("My battery level is at " + WallieBatteryLevelShot);
+                        Console.WriteLine("--------------------");
+                        Console.WriteLine("Please exit application!!!!!");
+                    }
+
                 }
                
                 return batteryLevel;
@@ -82,12 +144,38 @@ namespace RobotRebuilt
             {
                 Console.WriteLine("Saving ammo huh?");
                 Console.WriteLine("My battery level is " + batteryLevel);
-                
+
+                Console.WriteLine("Would you like to shoot an enemy robot? ");
+                Console.WriteLine("1. YES!");
+                Console.WriteLine("--------------");
+
+                int decision;
+                decision = Convert.ToInt32(Console.ReadLine());
+
+                if (decision == 1)
+                {
+                    int WallieBatteryLevelShot;
+                    WallieBatteryLevelShot = 100 - 99;
+
+                    Console.WriteLine("Shooting Japanese Robot......");
+                    Console.WriteLine("Wallie: Aghhhhhhh....You shot me!!!!!!");
+                    Console.WriteLine("My battery level is at " + WallieBatteryLevelShot);
+                    Console.WriteLine("--------------------");
+                    Console.WriteLine("Please exit application!!!!!");
+                }
+
+
                 return batteryLevel;
                 
             }
+            
+
             return batteryLevel;
+
+           
         }
+
+
 
     }
 }
